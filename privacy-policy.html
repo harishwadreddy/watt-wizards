@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Watt Wizards Private Limited</title>
+<meta name="description" content="Privacy Policy for the Aura app and Aura Core and Aura Dot devices, operated by Watt Wizards Private Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:#000; --n900:#161616; --n800:#262626; --n700:#393939; --n300:#a8a8a8; --n200:#c6c6c6; --n50:#f4f4f4;
+    --teal:#4ad3f1; --pink:#dd23bb; --navy:#080331;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--n50); font: 400 17px/1.65 'Space Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 16px; }
+
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(0,0,0,.8); backdrop-filter: blur(12px); border-bottom: 1px solid var(--n800); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; color: var(--n50); }
+  .logo:hover { text-decoration: none; }
+  .logo b { color: var(--teal); }
+  .links { display: none; gap: 32px; color: var(--n200); font-size: .95rem; }
+  .links a { color: var(--n200); }
+  .links a:hover { color: var(--teal); text-decoration: none; }
+
+  .doc { max-width: 46rem; margin: 0 auto; padding: 72px 16px 96px; }
+  .crumb { color: var(--n300); font-size: .9rem; margin-bottom: 20px; }
+  .crumb a { color: var(--n300); }
+  .eyebrow { display: inline-block; padding: 6px 14px; border: 1px solid var(--n700); border-radius: 999px; color: var(--n200); font-size: .85rem; margin-bottom: 20px; }
+  h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); line-height: 1.05; letter-spacing: -.03em; font-weight: 600; }
+  .intro { margin-top: 20px; color: var(--n200); font-size: 1.08rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; color: var(--n300); font-size: .92rem; }
+  .meta strong { color: var(--n200); font-weight: 500; }
+
+  .toc { margin-top: 40px; background: var(--n900); border: 1px solid var(--n800); border-radius: 20px; padding: 28px 28px 20px; }
+  .toc h2 { font-size: 1rem; letter-spacing: 0; font-weight: 500; color: var(--n200); margin-bottom: 12px; }
+  .toc ol { padding-left: 1.25rem; columns: 1; }
+  .toc li { margin: 6px 0; }
+  .toc a { color: var(--n50); }
+  .toc a:hover { color: var(--teal); }
+
+  article section { margin-top: 48px; scroll-margin-top: 88px; }
+  article h2 { font-size: 1.55rem; line-height: 1.2; letter-spacing: -.02em; font-weight: 600; }
+  article h2 span { color: var(--teal); font-weight: 500; margin-right: 8px; }
+  article p, article li { color: var(--n200); }
+  article p { margin-top: 14px; }
+  article ul, article ol { margin-top: 14px; padding-left: 1.25rem; }
+  article li { margin: 8px 0; }
+  article strong { color: var(--n50); font-weight: 600; }
+
+  .table-wrap { margin-top: 20px; overflow-x: auto; border: 1px solid var(--n800); border-radius: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 36rem; }
+  th, td { text-align: left; padding: 14px 16px; vertical-align: top; border-bottom: 1px solid var(--n800); }
+  th { color: var(--n50); font-weight: 500; background: var(--n900); }
+  td { color: var(--n200); }
+  tr:last-child td { border-bottom: 0; }
+
+  .contact { margin-top: 20px; background: var(--n900); border: 1px solid var(--n800); border-radius: 16px; padding: 24px; }
+  .contact p { margin-top: 6px; }
+
+  footer { border-top: 1px solid var(--n800); padding: 40px 0; color: var(--n300); font-size: .9rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: center; }
+  footer .legal { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  footer a { color: var(--n300); }
+  footer a:hover { color: var(--teal); text-decoration: none; }
+
+  @media (min-width: 768px) {
+    .links { display: flex; }
+    .toc ol { columns: 2; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html">Watt<b>Wizards</b></a>
+    <div class="links"><a href="index.html#solutions">Solutions</a><a href="index.html#about">About</a></div>
+  </div>
+</nav>
+
+<main class="doc">
+  <p class="crumb"><a href="index.html">Watt Wizards</a> / Legal</p>
+  <span class="eyebrow">Legal · Aura</span>
+  <h1>Privacy Policy</h1>
+  <p class="intro">This policy explains what personal data the Aura app and your Aura Core and Aura Dot devices collect, why we collect it, who we share it with, and the choices and rights you have.</p>
+  <p class="meta"><span><strong>Effective:</strong> 10 June 2026</span><span><strong>Last updated:</strong> 10 June 2026</span><span><strong>Applies to:</strong> Aura app v0.4+</span></p>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who-we-are">Who we are</a></li>
+      <li><a href="#scope">Scope of this policy</a></li>
+      <li><a href="#data">Data we collect</a></li>
+      <li><a href="#wifi">Wi-Fi &amp; Bluetooth setup data</a></li>
+      <li><a href="#use">How we use your data</a></li>
+      <li><a href="#bases">Legal bases</a></li>
+      <li><a href="#sharing">Sharing &amp; processors</a></li>
+      <li><a href="#tracking">No advertising or tracking</a></li>
+      <li><a href="#permissions">Device permissions</a></li>
+      <li><a href="#retention">Retention &amp; deletion</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact &amp; grievances</a></li>
+    </ol>
+  </nav>
+
+  <article>
+    <section id="who-we-are">
+      <h2><span>01</span>Who we are</h2>
+      <p>The Aura smart-home service (the “<strong>Service</strong>”) — comprising the Aura mobile app, the Aura Core hub, and Aura Dot peripherals — is operated by <strong>Watt Wizards Private Limited</strong>, a company registered in Jaipur, Rajasthan, India, and a wholly-owned subsidiary of <strong>Flock Energy Limited</strong> (United Kingdom). In this policy “we”, “us”, and “our” refer to Watt Wizards Private Limited.</p>
+      <p>For the purposes of applicable data-protection law, we act as the <strong>data fiduciary / data controller</strong> for the personal data described here. You can reach us at any time at <a href="mailto:support@flockenergy.co.uk">support@flockenergy.co.uk</a>.</p>
+    </section>
+
+    <section id="scope">
+      <h2><span>02</span>Scope of this policy</h2>
+      <p>This policy covers the personal data we process when you create an Aura account, set up and use the Aura Core hub and Aura Dot devices, and control your appliances through the app. It does not cover third-party products you choose to connect (for example, the air-conditioner or other appliance your Aura Dot controls), which are governed by their own manufacturers’ policies.</p>
+    </section>
+
+    <section id="data">
+      <h2><span>03</span>Data we collect</h2>
+      <p>We collect only what we need to run the Service. The categories are:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>What it includes</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Account</td>
+              <td>Email address, display name, an optional profile image, and a securely hashed password. We also store whether your email is verified.</td>
+              <td>To create and secure your account and sign you in.</td>
+            </tr>
+            <tr>
+              <td>Session &amp; security</td>
+              <td>Session tokens (stored hashed), and — for active sessions — the IP address and device user-agent, plus sign-in timestamps.</td>
+              <td>To keep you signed in and detect abuse.</td>
+            </tr>
+            <tr>
+              <td>Home &amp; device setup</td>
+              <td>The homes, rooms, devices, and peripherals you create; home memberships and access grants; hardware identifiers and Bluetooth (BLE) addresses of your Aura Core and Aura Dot units.</td>
+              <td>To register your hardware to your account and let you organise and control it.</td>
+            </tr>
+            <tr>
+              <td>Control commands</td>
+              <td>The control actions you send (for example, turning an appliance on/off or changing a setting), with timestamps.</td>
+              <td>To carry out your instructions and show device state.</td>
+            </tr>
+            <tr>
+              <td>Device telemetry</td>
+              <td>Readings reported by your devices where available — such as temperature, humidity, and Bluetooth signal strength (RSSI) — with timestamps.</td>
+              <td>To show live status and keep your devices working reliably.</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td>Information you send us when you contact <a href="mailto:support@flockenergy.co.uk">support@flockenergy.co.uk</a>.</td>
+              <td>To respond to and resolve your request.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do <strong>not</strong> collect your location, contacts, photos, calendar, or advertising identifiers, and the app contains no advertising or third-party analytics SDKs (see <a href="#tracking">Section 08</a>).</p>
+    </section>
+
+    <section id="wifi">
+      <h2><span>04</span>Wi-Fi &amp; Bluetooth setup data</h2>
+      <p>To get your Aura Core online, the app asks for your <strong>Wi-Fi network name (SSID) and password</strong> during setup. This is sent <strong>directly to your Aura Core over a local Bluetooth or Wi-Fi connection</strong> and stored on the device so it can reconnect. Your Wi-Fi password is <strong>not stored on our cloud servers</strong>.</p>
+      <p>When setting up, the app scans for nearby Aura devices over Bluetooth and shows their signal strength so you can pick the right one. This Bluetooth scan is configured so the operating system does <strong>not</strong> derive your physical location from it, and we do not request or use any location permission.</p>
+    </section>
+
+    <section id="use">
+      <h2><span>05</span>How we use your data</h2>
+      <ul>
+        <li>Create, secure, and operate your account and the Service.</li>
+        <li>Register your Aura hardware and let you control your appliances.</li>
+        <li>Show live device status and respond to your commands in real time.</li>
+        <li>Keep firmware and the app up to date and working reliably, including security fixes.</li>
+        <li>Provide customer support and respond to your requests.</li>
+        <li>Maintain security, prevent fraud and abuse, and meet our legal obligations.</li>
+      </ul>
+      <p>We do not sell your personal data, and we do not use it for advertising or to build marketing profiles.</p>
+    </section>
+
+    <section id="bases">
+      <h2><span>06</span>Legal bases for processing</h2>
+      <p>Depending on your jurisdiction, we rely on the following bases:</p>
+      <ul>
+        <li><strong>Performance of a contract</strong> — to provide the Service you signed up for.</li>
+        <li><strong>Legitimate interests</strong> — to keep the Service secure, reliable, and free from abuse, balanced against your rights.</li>
+        <li><strong>Consent</strong> — where you give it (for example, providing Wi-Fi credentials during setup, or granting Bluetooth access). You can withdraw consent at any time.</li>
+        <li><strong>Legal obligation</strong> — where we must process data to comply with the law.</li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <h2><span>07</span>Sharing &amp; service providers</h2>
+      <p>We do not sell or rent your data. We share it only with a small set of service providers (processors) who help us run the Service, and only as needed:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Provider</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Expo (EAS)</td>
+              <td>Delivering over-the-air app updates and building app releases.</td>
+            </tr>
+            <tr>
+              <td>Apple App Store / Google Play</td>
+              <td>Distributing the app and processing the download. Your store account is governed by Apple’s and Google’s own policies.</td>
+            </tr>
+            <tr>
+              <td>Our hosting &amp; backend</td>
+              <td>Running the Aura cloud (application servers, database, and the MQTT message broker that relays commands between the app and your hub).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We may also share data within the Flock Energy group (our UK parent, Flock Energy Limited) where needed to operate the Service, and we may disclose data where required by law or to protect the rights, safety, and security of our users and the Service.</p>
+    </section>
+
+    <section id="tracking">
+      <h2><span>08</span>No advertising or third-party tracking</h2>
+      <p>The Aura app contains <strong>no advertising, no third-party analytics, and no cross-app tracking</strong>. We do not integrate ad networks or behavioural-tracking SDKs, and the app declares that it does <strong>not</strong> track you in the sense defined by Apple’s App Tracking Transparency framework.</p>
+    </section>
+
+    <section id="permissions">
+      <h2><span>09</span>Device permissions we request</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why we ask</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bluetooth</td>
+              <td>To find, set up, and communicate with your Aura Core and Aura Dot devices over BLE. Required on both iOS and Android.</td>
+            </tr>
+            <tr>
+              <td>Local network (iOS)</td>
+              <td>Used during hub setup to reach your Aura Core on your local Wi-Fi network.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not request access to your camera, location, contacts, microphone, or photos. You can review and change permissions at any time in your device settings; revoking Bluetooth will prevent device setup and local control.</p>
+    </section>
+
+    <section id="retention">
+      <h2><span>10</span>Data retention &amp; account deletion</h2>
+      <p>We keep your personal data only as long as your account is active or as needed to provide the Service, then delete or anonymise it.</p>
+      <p>You can <strong>delete your account directly in the app</strong> (Profile → Delete account). When you do, your account is immediately disabled and signed out, and your data is scheduled for permanent deletion after a short grace period (currently 14 days, which also gives you a window to recover an account deleted by mistake). After the grace period, your account and its associated data are permanently purged from our systems.</p>
+      <p>We may retain a limited amount of data where the law requires it, or where it is needed to complete a transaction or resolve a dispute; if so, we will tell you what is being kept and why, and we will delete it once it is no longer required. Wi-Fi credentials stored on your Aura Core are cleared when you reset the device.</p>
+    </section>
+
+    <section id="security">
+      <h2><span>11</span>How we protect your data</h2>
+      <ul>
+        <li>Traffic between the app, our servers, and your hub is encrypted in transit (TLS / HTTPS).</li>
+        <li>Passwords are stored using one-way hashing — we never store them in plain text.</li>
+        <li>Session tokens are stored hashed on our servers and in your device’s secure keychain/keystore.</li>
+        <li>Access to production systems is restricted on a need-to-know basis.</li>
+      </ul>
+      <p>No system is perfectly secure, but we work to protect your data and will notify you and the relevant authorities of a significant breach where the law requires.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span>12</span>International transfers</h2>
+      <p>We operate from India and are part of a group headquartered in the United Kingdom. Your data may be processed in, or transferred to, India, the UK, or other countries where our service providers operate. Where we transfer data across borders, we use appropriate safeguards as required by applicable law (such as the India Digital Personal Data Protection Act, 2023 and, for UK/EU users, the UK GDPR).</p>
+    </section>
+
+    <section id="rights">
+      <h2><span>13</span>Your rights</h2>
+      <p>Subject to your local law, you may have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you and request a copy.</li>
+        <li>Correct inaccurate or incomplete data.</li>
+        <li>Delete your account and data (see <a href="#retention">Section 10</a>).</li>
+        <li>Withdraw consent you previously gave.</li>
+        <li>Object to or restrict certain processing, and request data portability (UK/EU users).</li>
+        <li>Nominate another person to exercise your rights in the event of death or incapacity (India DPDP Act).</li>
+      </ul>
+      <p>To exercise any of these, email <a href="mailto:support@flockenergy.co.uk">support@flockenergy.co.uk</a>. We will respond within the timeframe required by law. You also have the right to complain to your local data-protection authority (in the UK, the Information Commissioner’s Office; in India, the Data Protection Board).</p>
+    </section>
+
+    <section id="children">
+      <h2><span>14</span>Children</h2>
+      <p>The Service is not directed to children. You must be old enough to enter a binding contract in your country (and at least 18) to create an account. We do not knowingly collect personal data from children; if you believe a child has provided us data, contact us and we will delete it.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span>15</span>Changes to this policy</h2>
+      <p>We may update this policy as the Service evolves. When we make material changes, we will update the “Last updated” date above and, where appropriate, notify you in the app. Your continued use of the Service after an update means you accept the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span>16</span>Contact &amp; grievances</h2>
+      <p>For any privacy question, request, or complaint, contact us:</p>
+      <div class="contact">
+        <p><strong>Watt Wizards Private Limited</strong></p>
+        <p>Privacy &amp; Grievance contact</p>
+        <p>Email: <a href="mailto:support@flockenergy.co.uk">support@flockenergy.co.uk</a></p>
+        <p>Registered office: Jaipur, Rajasthan, India</p>
+        <p>A subsidiary of Flock Energy Limited (United Kingdom)</p>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Watt Wizards Private Limited · Jaipur, Rajasthan, India</span>
+    <span class="legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></span>
+    <span>CIN U58200RJ2025FTC100634</span>
+  </div>
+</footer>
+</body>
+</html>

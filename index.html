@@ -59,7 +59,8 @@
   .band .cta { margin-top: 32px; }
 
   footer { border-top: 1px solid var(--n800); padding: 40px 0; color: var(--n300); font-size: .9rem; }
-  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: center; }
+  footer .legal { display: flex; flex-wrap: wrap; gap: 8px 20px; }
   footer a:hover { color: var(--teal); }
 
   @media (min-width: 768px) {
@@ -110,8 +111,9 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Watt Wizards Private Limited · Jaipur, Rajasthan, India</span><span>CIN U58200RJ2025FTC100634</span>
-    
+    <span>© 2026 Watt Wizards Private Limited · Jaipur, Rajasthan, India</span>
+    <span class="legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></span>
+    <span>CIN U58200RJ2025FTC100634</span>
   </div>
 </footer>
 </body>
