@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watt Wizards Private Limited</title>
+<meta name="description" content="Watt Wizards Private Limited — data analytics and software solutions for the energy sector.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:#000; --n900:#161616; --n800:#262626; --n700:#393939; --n300:#a8a8a8; --n200:#c6c6c6; --n50:#f4f4f4;
+    --teal:#4ad3f1; --pink:#dd23bb; --navy:#080331;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--n50); font: 400 17px/1.6 'Space Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 16px; }
+
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(0,0,0,.8); backdrop-filter: blur(12px); border-bottom: 1px solid var(--n800); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; }
+  .logo b { color: var(--teal); }
+  .links { display: none; gap: 32px; color: var(--n200); font-size: .95rem; }
+  .links a:hover { color: var(--teal); }
+  .btn { display: inline-block; padding: 11px 22px; border-radius: 999px; font-weight: 500; font-size: .95rem; transition: .2s; }
+  .btn-fill { background: var(--teal); color: var(--black); }
+  .btn-fill:hover { background: #fff; }
+  .btn-line { border: 1px solid var(--n700); color: var(--n50); }
+  .btn-line:hover { border-color: var(--teal); color: var(--teal); }
+
+  .hero { position: relative; overflow: hidden; padding: 120px 0 110px; text-align: center;
+    background: radial-gradient(60% 60% at 50% 0%, rgba(74,211,241,.18), transparent 70%), radial-gradient(40% 50% at 85% 40%, rgba(221,35,187,.14), transparent 70%); }
+  .eyebrow { display: inline-block; padding: 6px 14px; border: 1px solid var(--n700); border-radius: 999px; color: var(--n200); font-size: .85rem; margin-bottom: 28px; }
+  h1 { font-size: clamp(2.75rem, 9vw, 6rem); line-height: 1.02; letter-spacing: -.035em; font-weight: 600; color: var(--teal); }
+  h1 span { color: var(--n50); }
+  .hero p { max-width: 38rem; margin: 28px auto 0; color: var(--n200); font-size: 1.2rem; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 40px; }
+
+  section { padding: 96px 0; }
+  h2 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; letter-spacing: -.025em; font-weight: 600; max-width: 40rem; }
+  h2 em { font-style: normal; color: var(--teal); }
+  .lead { color: var(--n300); margin-top: 16px; max-width: 36rem; }
+  .grid { display: grid; gap: 16px; margin-top: 56px; }
+  .card { background: var(--n900); border: 1px solid var(--n800); border-radius: 20px; padding: 32px; transition: .25s; }
+  .card:hover { border-color: var(--teal); transform: translateY(-3px); }
+  .num { color: var(--teal); font-weight: 500; font-size: .9rem; }
+  .card h3 { margin-top: 40px; font-size: 1.4rem; font-weight: 500; letter-spacing: -.01em; }
+  .card p { margin-top: 10px; color: var(--n300); font-size: .98rem; }
+
+  .stats { border-block: 1px solid var(--n800); padding: 56px 0; }
+  .stats .wrap { display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr); text-align: center; }
+  .stats strong { display: block; font-size: clamp(2rem, 6vw, 3.25rem); font-weight: 600; color: var(--teal); letter-spacing: -.03em; }
+  .stats span { color: var(--n300); font-size: .95rem; }
+
+  .band { background: linear-gradient(135deg, var(--navy), #3c043b); border-radius: 28px; padding: 64px 24px; text-align: center; }
+  .band h2 { margin: 0 auto; }
+  .band .cta { margin-top: 32px; }
+
+  footer { border-top: 1px solid var(--n800); padding: 40px 0; color: var(--n300); font-size: .9rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+  footer a:hover { color: var(--teal); }
+
+  @media (min-width: 768px) {
+    .links { display: flex; }
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    .stats .wrap { grid-template-columns: repeat(4, 1fr); }
+    .band { padding: 96px 48px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">Watt<b>Wizards</b></a>
+    <div class="links"><a href="#solutions">Solutions</a><a href="#about">About</a></div>
+      </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Watt Wizards Private Limited</span>
+    <h1>Energy data,<br><span>made actionable.</span></h1>
+    <p>Data analytics and software for the energy sector — turning smart meter and utility data into insights that drive better decisions.</p>
+    <div class="cta">
+      <a class="btn btn-fill" href="#solutions">Explore solutions</a>
+    </div>
+  </div>
+</header>
+
+<section id="solutions">
+  <div class="wrap">
+    <h2>Built for the <em>energy industry.</em></h2>
+    <p class="lead">One software platform that transforms complex energy usage data into actionable information.</p>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Smart meter analytics</h3><p>Processing and analysing energy consumption data from smart meters.</p></div>
+      <div class="card"><span class="num">02</span><h3>Utility data insights</h3><p>Aggregating and processing utility data into valuable insights for stakeholders.</p></div>
+      <div class="card"><span class="num">03</span><h3>Customer intelligence</h3><p>Understanding consumption patterns to improve efficiency and customer service.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Who we <em>serve.</em></h2>
+    <p class="lead">Power utilities, solar installation companies, lenders and energy service providers — helping them make better decisions and accelerate the adoption of clean energy.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Watt Wizards Private Limited · Jaipur, Rajasthan, India</span><span>CIN U58200RJ2025FTC100634</span>
+    
+  </div>
+</footer>
+</body>
+</html>
