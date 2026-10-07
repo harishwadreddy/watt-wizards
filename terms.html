@@ -37,12 +37,13 @@
   .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; color: var(--n300); font-size: .92rem; }
   .meta strong { color: var(--n200); font-weight: 500; }
 
-  .toc { margin-top: 40px; background: var(--n900); border: 1px solid var(--n800); border-radius: 20px; padding: 28px 28px 20px; }
-  .toc h2 { font-size: 1rem; letter-spacing: 0; font-weight: 500; color: var(--n200); margin-bottom: 12px; }
-  .toc ol { padding-left: 1.25rem; columns: 1; }
-  .toc li { margin: 6px 0; }
+  .toc { margin-top: 40px; background: var(--n900); border: 1px solid var(--n800); border-radius: 20px; padding: 26px 28px 16px; }
+  .toc h2 { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; color: var(--n300); margin-bottom: 16px; }
+  .toc ol { list-style: none; counter-reset: toc; padding: 0; margin: 0; display: grid; gap: 10px 28px; }
+  .toc li { counter-increment: toc; min-width: 0; }
   .toc a { color: var(--n50); }
-  .toc a:hover { color: var(--teal); }
+  .toc a::before { content: counter(toc, decimal-leading-zero); color: var(--teal); font-weight: 500; margin-right: 10px; font-variant-numeric: tabular-nums; }
+  .toc a:hover { color: var(--teal); text-decoration: none; }
 
   article section { margin-top: 48px; scroll-margin-top: 88px; }
   article h2 { font-size: 1.55rem; line-height: 1.2; letter-spacing: -.02em; font-weight: 600; }
@@ -64,7 +65,7 @@
 
   @media (min-width: 768px) {
     .links { display: flex; }
-    .toc ol { columns: 2; }
+    .toc ol { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(9, auto); grid-auto-flow: column; }
   }
 </style>
 </head>
